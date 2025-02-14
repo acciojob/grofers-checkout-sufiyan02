@@ -12,7 +12,6 @@ const getSum = () => {
 	});
 
 	let r = document.createElement("tr");
-	// r.id = "trow"
 
 	let c = document.createElement("td");
 	c.textContent = `Total Price: Rs ${ans}`;
