@@ -15,7 +15,8 @@ const getSum = () => {
 	r.id = "trow"
 
 	let c = document.createElement("td");
-	c.textContent = `Total Price: Rs ${ans}`
+	c.textContent = `Total Price: Rs ${ans}`;
+	c.id = "ans";
 
 	r.appendChild(c)
 
