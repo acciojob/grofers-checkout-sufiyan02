@@ -7,14 +7,15 @@ const getSum = () => {
     let p = document.querySelectorAll(".price");
 	
 	let ans = 0
-    p.forEach(pr =>{
-		ans += parseInt(pr)
+    p.forEach(price =>{
+		ans += parseInt(price.innerText);
 	});
 
 	let r = document.createElement("tr");
+	r.id = "trow"
 
-	let c = document.createCell("td");
-	c.textContent = "`Total Price: Rs ${ans}`"
+	let c = document.createElement("td");
+	c.textContent = `Total Price: Rs ${ans}`
 
 	r.appendChild(c)
 
